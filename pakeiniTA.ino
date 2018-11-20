@@ -5,9 +5,12 @@
 
 Servo servo;
 
+// Change this section based on your Blynk project
 char auth[] = "dd3ff8e311424e0b8e3640c58b60187d";
-char ssid[] = "yoyoy";
-char pass[] = "hahaha3kali";
+
+// Change this section base on your hotspot device 
+char ssid[] = "yourssid";
+char pass[] = "yourpassword";
 
 void setup()
 {
@@ -17,7 +20,7 @@ void setup()
   // NodeMCU D8 pin
   servo.attach(15);
 }
-  
+
 void loop()
 {
   Blynk.run();
