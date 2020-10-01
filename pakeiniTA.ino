@@ -1,12 +1,13 @@
 #define BLYNK_PRINT Serial
-#include <ESP8266WiFi.h>
+// should be uncommented
+// #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 #include <Servo.h>
 
 Servo servo;
 
 // Change this section based on your Blynk project
-char auth[] = "dd3ff8e311424e0b8e3640c58b60187d";
+char auth[] = "";
 
 // Change this section base on your hotspot device 
 char ssid[] = "yourssid";
@@ -40,3 +41,4 @@ BLYNK_WRITE(V3)
 {
   servo.write(90);
 }
+
